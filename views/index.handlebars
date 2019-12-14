@@ -2,7 +2,7 @@
     <h1>Eat-Da-Burgers</h1>
     <img src="/assets/img/brg.png" alt="">
 
-<div class="row">
+<div class="row text-left">
     <div class="col-6">
         <ul>
             {{#each burgers}}
@@ -26,7 +26,7 @@
 
     <form class="create-form">
         <div class="form-group">
-            <textarea type="text" name="name" id="nm"></textarea>
+            <input type="text" name="name" id="nm" style="height: 60px;">
         </div>
         <button class="btn btn-light" type="submit">Add Burger</button>
     </form>
