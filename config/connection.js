@@ -1,15 +1,17 @@
 // setup the code to connect Node to MySQL
-
+require("dotenv").config();
 const mysql = require ("mysql");
 
-const connection = mysql.createConnection({
+const config = process.env.JAWSDB_URL || {
     host: "localhost",
     port: 3306,
     // ask why when i change the port, it doesn't work?
     user: "root",
     password: "password",
     database: "burgers_db"
-});
+};
+
+const connection = mysql.createConnection(config);
 
 connection.connect(function(err) {
     if (err) {
