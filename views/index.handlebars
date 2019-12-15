@@ -2,8 +2,8 @@
     <h1>Eat-Da-Burgers</h1>
     <img src="/assets/img/brg.png" alt="">
 
-<div class="row text-left">
-    <div class="col-6">
+<div class="row text-left my-3 mx-auto" style="border: 1px solid green; max-width:700px">
+    <div class="col-6 m-0 p-0" style="border-right: 1px solid green">
         <ul>
             {{#each burgers}}
                 {{#unless devoured}} 
@@ -12,7 +12,7 @@
             {{/each}}
         </ul>
     </div>
-    <div class="col-6">
+    <div class="col-6 m-0 p-0">
         <ul>
             {{#each burgers}}
                 {{#if devoured}} 
@@ -28,6 +28,6 @@
         <div class="form-group">
             <input type="text" name="name" id="nm" style="height: 60px;">
         </div>
-        <button class="btn btn-light" type="submit">Add Burger</button>
+        <button class="btn mb-5" type="submit" style="background: white;">Add A Burger</button>
     </form>
 </div>
